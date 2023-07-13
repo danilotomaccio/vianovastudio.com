@@ -4,14 +4,18 @@ header {
     height: 100vh;
 }
 
-h1 {
+#my-text {
     font-size: 7rem;
     text-transform: uppercase;
     font-family: 'Bebas Neue';
 }
 
-.char {
-    transform: translateY(115px);
+.letter-container {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.letter {
+    transform: translateY(-150px);
     transition: transform .5s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     line-height: 5.9rem;
