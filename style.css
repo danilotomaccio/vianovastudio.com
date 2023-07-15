@@ -1,22 +1,123 @@
-header {
-    display: grid;
-    place-content: center;
-    height: 100vh;
+body {
+  margin: 0;
+  background-image: url(img/BG.svg);
+  background-repeat-y: no-repeat;
+
+  background-size: cover;
 }
 
-#my-text {
-    font-size: 7rem;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue';
+h1 {
+  font-size: 7rem;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
-.letter-container {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+#smooth-content {
+  height: 4000px;
 }
 
-.letter {
-    transform: translateY(-150px);
-    transition: transform .5s;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    line-height: 5.9rem;
+.sezione {
+  width: 100vw;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%) rotate(45deg);
+  will-change: transform;
+
+  background-size: cover;
+}
+
+.box-a,
+.box-a2 {
+  left: 10px;
+  top: 200px;
+  width: 50vw;
+  height: 50vw;
+  background-image: url(img/cartone1.jpeg);
+  border-radius: 6px;
+
+  box-shadow: 4px 3px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.box-a2 {
+  background-image: url(img/lino.jpeg);
+  transform: translateX(-50%) rotate(40deg);
+  box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box-b {
+  top: 0;
+  left: 100%;
+  background-image: url(img/carta1-clipped.png);
+  transform: translateX(-50%) rotate(12deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 40vw;
+}
+
+.box-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.75));
+}
+
+.cutter-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: drop-shadow(19px 1px 8px rgba(0, 0, 0, 0.75));
+
+  pointer-events: none;
+}
+
+@media (max-width: 800px) {
+  .box-a {
+    top: 20%;
+  }
+}
+
+.font1 {
+  font-size: 7rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.font2 {
+  font-size: 7rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+}
+
+#cutter {
+    width: 120vh;
+    transform: rotate(-15deg);
+}
+
+.contatti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#wa-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.contatti-text {
+    font-family: 'Manrope', sans-serif;
+    padding: 12px;
+    font-size: medium;
+}
+
+#wa-btn-img {
+    width: 200px;
 }

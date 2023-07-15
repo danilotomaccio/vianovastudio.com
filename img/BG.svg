@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.53 1155.08">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-dasharray: 0 0 12.11 10.1;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #3c3c3b;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-3, .cls-5, .cls-4 {
+        opacity: .7;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 0 0 12 10;
+      }
+    </style>
+  </defs>
+  <g id="Livello_2-2" data-name="Livello 2">
+    <g class="cls-5">
+      <g>
+        <line class="cls-2" x1="43.07" y1=".12" x2="43.07" y2="6.12"/>
+        <line class="cls-1" x1="43.07" y1="16.22" x2="43.07" y2="1143.91"/>
+        <line class="cls-2" x1="43.07" y1="1148.96" x2="43.07" y2="1154.96"/>
+      </g>
+    </g>
+    <circle class="cls-3" cx="92.23" cy="105.17" r="49.16"/>
+    <circle class="cls-3" cx="127.21" cy="140.15" r="84.14"/>
+    <line class="cls-3" x1=".12" y1="224.29" x2="595.4" y2="224.29"/>
+    <circle class="cls-3" cx="210.94" cy="223.88" r="118.71"/>
+    <line class="cls-3" x1="211.35" y1=".12" x2="211.35" y2="1154.96"/>
+    <line class="cls-4" x1="92.63" y1="461.31" x2="330.06" y2="461.31"/>
+    <path class="cls-4" d="m330.06,461.31c0,65.56-53.15,118.71-118.71,118.71s-118.71-53.15-118.71-118.71"/>
+    <line class="cls-3" x1="92.23" y1="698.74" x2="329.66" y2="698.74"/>
+    <path class="cls-3" d="m329.66,698.74c0-65.56-53.15-118.71-118.71-118.71s-118.71,53.15-118.71,118.71"/>
+    <path class="cls-3" d="m595.4,294.55c-27.23-8.19-56.09-12.59-85.99-12.59-164.62,0-298.07,133.45-298.07,298.07s133.45,298.07,298.07,298.07c29.9,0,58.76-4.4,85.99-12.59"/>
+    <circle class="cls-3" cx="423.42" cy="865.5" r="171.98"/>
+    <line class="cls-3" x1="509.41" y1="878.09" x2="43.07" y2="878.09"/>
+    <line class="cls-3" x1="43.07" y1="924.52" x2="263.01" y2="924.52"/>
+  </g>
+</svg>
