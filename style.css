@@ -1,7 +1,7 @@
 header {
     display: grid;
     place-content: center;
-    height: 100vh;
+    height: 65vh;
 }
 
 #my-text {
@@ -19,4 +19,39 @@ header {
     transition: transform .5s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     line-height: 5.9rem;
+}
+
+.font1 {
+  font-size: 7rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.font2 {
+  font-size: 7rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+}
+
+.contatti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#wa-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.contatti-text {
+  font-family: 'Manrope', sans-serif;
+  padding: 12px;
+  font-size: medium;
+}
+
+#wa-btn-img {
+  width: 200px;
 }
