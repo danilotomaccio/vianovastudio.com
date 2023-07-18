@@ -31,7 +31,7 @@ const cutterTimeline = new gsap.timeline({
     trigger: "#sez-3",
     pin: true,
     scrub: 4,
-    end: `+=2000`,
+    end: `+=1000`,
     // markers: true
   }
 });
