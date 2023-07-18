@@ -1,106 +1,44 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-ScrollTrigger.normalizeScroll(true);
+GSDevTools.create();
 
-let smoother = ScrollSmoother.create({
-  smooth: 2,
-  effects: true,
-  normalizeScroll: true
-});
-
-ScrollTrigger.create({
-  trigger: "#sez-1",
-  pin: true,
-  // start: "center center",
-  end: "+=800",
-  // markers: true
-});
-
-ScrollTrigger.create({
-  trigger: "#sez-2",
-  pin: true,
-  // start: "center center",
-  end: "+=800",
-  // markers: true
-});
 
 const cutterTimeline = new gsap.timeline({
-  ease: 'none',
-  /* scrollTrigger: {
-    trigger: "#sez-3",
-    pin: true,
-    scrub: 1,
-    end: `+=800`,
-    // end: `+=${window.innerHeight * 2}`,
-    //markers: true
-  } */
+  ease: 'none'
 });
 
-/* cutterTimeline.fromTo(document.getElementById("cutter"),
-  {
-    xPercent: -100
-  },
-  {
-    xPercent: 100,
-  },
-  1.5
-); */
 
 cutterTimeline.to("#cutter", {
-  xPercent: 100
-})
+  x: "100%",
+  duration: 1.5
+});
 
-/* document.querySelector("button").addEventListener("click", e => {
-  // scroll to the spot where .box-c is in the center.
-  // parameters: element, smooth, position
-  smoother.scrollTo(".box-c", true, "center center");
-  
-  // or you could animate the scrollTop:
-  // gsap.to(smoother, {
-  // 	scrollTop: smoother.offset(".box-c", "center center"),
-  // 	duration: 1
-  // });
-}); */
+gsap.set("#contatti", { perspective: 1000 });
 
-
-
-
-/* let cv_tl = new gsap.timeline({
-  ease: 'none',
-  scrollTrigger: {
-    trigger: "#cont_cv",
-    start: "top top+=100",
-    end: "+=800",
-    scrub: true,
-    markers: true,
-    pin: true
-  }
-}); */
-
-gsap.set("#cont_cv", { perspective: 1000 });
-
-
-cutterTimeline.from(
-  "#cont_cv .top_cv",
+cutterTimeline.fromTo(
+  "#contatti .contatti-cover",
   {
     duration: 2,
     transformOrigin: "left top",
-    autoAlpha: 0,
-    ease: "none"
-    //transformStyle: "preserve3d",
-  },
-  1.5
+    // autoAlpha: 0,
+    // ease: "none",
+    transformStyle: "preserve3d",
+    rotationX: 180,
+    stagger: 3,
+    borderBottomWidth: "1px",
+  }, {
+    rotationX: 70,
+  borderBottomWidth: 0
+
+},
+  "+1"
 );
 
-cutterTimeline.from(
-  "#cont_cv .not_top_cv",
-  {
-    duration: 2,
-    transformOrigin: "left top",
-    autoAlpha: 0,
-    ease: "none",
-    //transformStyle: "preserve3d",
-    rotationX: 180, // do not use negative rotation in this case
-    stagger: 3
-  },
-  "+1.5"
+console.log(document.querySelector(".contatti-cover:after"));
+
+cutterTimeline.to("html", {
+  "--shadow-alpha": 1,
+  "--shadow-visibility": "inherit",
+  duration: 2,
+},
+  "<"
 );
