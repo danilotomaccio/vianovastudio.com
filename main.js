@@ -23,12 +23,16 @@ ScrollTrigger.create({
   // markers: true
 });
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-GSDevTools.create();
-
 
 const cutterTimeline = new gsap.timeline({
-  ease: 'none'
+  ease: 'none',
+  scrollTrigger: {
+    trigger: "#sez-3",
+    pin: true,
+    scrub: 1,
+    end: `+=800`,
+    // markers: true
+  }
 });
 
 
@@ -52,13 +56,15 @@ cutterTimeline.fromTo(
     borderBottomWidth: "1px",
   }, {
     rotationX: 70,
-  borderBottomWidth: 0
+  borderBottomWidth: 0,
+  borderTopWidth: 0,
+  borderLeftWidth: 0,
+  borderRightWidth: 0,
 
 },
   "+1"
 );
 
-console.log(document.querySelector(".contatti-cover:after"));
 
 cutterTimeline.to("html", {
   "--shadow-alpha": 1,
