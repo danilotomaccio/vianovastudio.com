@@ -15,13 +15,13 @@ ScrollTrigger.create({
   // markers: true
 });
 
-ScrollTrigger.create({
+/* ScrollTrigger.create({
   trigger: "#sez-2",
   pin: true,
   // start: "center center",
   end: "+=800",
   // markers: true
-});
+}); */
 
 
 const cutterTimeline = new gsap.timeline({
@@ -73,3 +73,20 @@ cutterTimeline.to("html", {
 },
   "<"
 );
+
+const sections = gsap.utils.toArray("#sez-2 section");
+
+const scrollTween = gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#sez-2",
+    pin: true,
+    scrub: 1,
+    end: "+=3000",
+    snap: {
+      snapTo: 1 / (sections.length - 1),
+    },
+    markers: true,
+  }
+});
