@@ -3,9 +3,9 @@ ScrollTrigger.normalizeScroll(true);
 
 let smoother = ScrollSmoother.create({
   smooth: 2,
-  smoothTouch: .1,
+  // smoothTouch: .001,
   effects: true,
-  normalizeScroll: true
+  // normalizeScroll: true
 });
 
 ScrollTrigger.create({
@@ -31,7 +31,8 @@ const cutterTimeline = new gsap.timeline({
     trigger: "#sez-3",
     pin: true,
     scrub: 4,
-    end: `+=1000`,
+    once: true,
+    end: `+=1200`,
     // markers: true
   }
 });
