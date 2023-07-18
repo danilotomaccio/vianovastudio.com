@@ -29,8 +29,8 @@ const cutterTimeline = new gsap.timeline({
   scrollTrigger: {
     trigger: "#sez-3",
     pin: true,
-    scrub: 1,
-    end: `+=800`,
+    scrub: 4,
+    end: `+=2000`,
     // markers: true
   }
 });

@@ -3,13 +3,8 @@ html {
   --shadow-visibility: hidden;
 }
 
-
 body {
   margin: 0;
-  background-image: url(img/BG.svg);
-  background-repeat-y: no-repeat;
-
-  background-size: cover;
 }
 
 h1 {
@@ -18,7 +13,9 @@ h1 {
 }
 
 #smooth-content {
-  height: 4000px;
+  height: 5000px;
+
+  background-color: #e9e9ff;
 }
 
 .sezione {
@@ -99,35 +96,40 @@ h1 {
   font-weight: 100;
 }
 
+.font3 {
+  font-size: 1rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+}
+
 #cutter {
-    width: 120vh;
-    transform: rotate(-15deg);
+  width: 120vh;
+  transform: rotate(-15deg);
 }
 
 .contatti {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #wa-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .contatti-text {
-    font-family: 'Manrope', sans-serif;
-    padding: 12px;
-    font-size: medium;
+  font-family: "Manrope", sans-serif;
+  padding: 12px;
+  font-size: medium;
 }
 
 #wa-btn-img {
-    width: 200px;
+  width: 200px;
 }
-
 
 .cutter-wrap {
   position: absolute;
@@ -153,9 +155,9 @@ h1 {
   width: 350px;
   height: 130px;
 
-  box-shadow: inset 0px 0px 12px -7px #00000080;
+  box-shadow: inset 0px 0px 12px -5px #00000080;
 
-  background-color: #e9e9ff;
+  background-color: white;
 }
 
 .contatti-container {
@@ -174,7 +176,7 @@ h1 {
   /* max-width: 80vw; */
   height: 130px;
   position: absolute;
-  background-color: white;
+  background-color: #e9e9ff;
   will-change: rotatex, translatey;
 
   transform: translateY(130px);
@@ -200,4 +202,43 @@ h1 {
 #contatti div:nth-child(1) {
   transform: translateY(0px);
   z-index: 3;
+}
+
+.main-content {
+  margin: 0;
+  position: absolute;
+}
+
+.main-content .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52%;
+
+  background-image: url(img/BG-Tagliato@4x.png);
+  background-repeat-y: no-repeat;
+
+  background-size: cover;
+  filter: drop-shadow(0px 3px 5px #00000040);
+}
+
+.main-content svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 200px;
+  background-color: #e9e9ff;
+  width: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 30px;
 }
