@@ -3,6 +3,7 @@ ScrollTrigger.normalizeScroll(true);
 
 let smoother = ScrollSmoother.create({
   smooth: 2,
+  smoothTouch: .1,
   effects: true,
   normalizeScroll: true
 });
@@ -87,6 +88,6 @@ const scrollTween = gsap.to(sections, {
     snap: {
       snapTo: 1 / (sections.length - 1),
     },
-    markers: true,
+    // markers: true,
   }
 });
