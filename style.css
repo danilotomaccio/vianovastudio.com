@@ -232,7 +232,7 @@ h1 {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   height: 200px;
   background-color: #e9e9ff;
@@ -281,5 +281,13 @@ h1 {
   }
   .font3 {
     font-size: clamp(.5rem, 20vw, 1rem);
+  }
+
+  #cutter {
+    width: 100vh;
+  }
+
+  .main-content .bg {
+    height: 78%;
   }
 }
