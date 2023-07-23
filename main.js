@@ -88,6 +88,7 @@ const scrollTween = gsap.to(sections, {
     end: "+=3000",
     snap: {
       snapTo: 1 / (sections.length - 1),
+      delay: 0.01,
     },
     // markers: true,
   }
